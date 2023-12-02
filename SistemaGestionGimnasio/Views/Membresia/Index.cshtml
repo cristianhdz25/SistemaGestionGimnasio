@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SistemaGestionGimnasio.Models.Membresium>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+
+<h1>Gestión de Membresías</h1>
+<p>
+    <a asp-action="Create">Agregar Membresía</a>
+</p>
+
+@ViewBag.ErrorEliminar
+
+@using (Html.BeginForm("Index", "Membresia", FormMethod.Get))
+{
+    <p>
+        Filtrar por Cédula: <input type="text" name="filtroCedula" />
+        Fecha de Inicio: <input type="date" name="filtroFechaInicio" />
+        Fecha de Vencimiento: <input type="date" name="filtroFechaFin" />
+        <input type="submit" value="Filtrar" class="btn btn-secondary" />
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Fecha de Inicio
+            </th>
+            <th>
+                Fecha de Vencimiento
+            </th>
+            <th>
+               Tipo Membresia
+            </th>
+            <th>
+                Monto
+            </th>
+            <th>
+                Cédula Cliente
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaVencimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoMembresia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClienteCedulaNavigation.ClienteCedula)
+            </td>
+            <td>
+                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Modificar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

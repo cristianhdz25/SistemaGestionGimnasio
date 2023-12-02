@@ -1,0 +1,75 @@
+﻿@model SistemaGestionGimnasio.Models.Empleado
+
+@{
+    ViewData["Title"] = "Details";
+}
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+
+
+<h1>Details</h1>
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Cédula
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EmpleadoCedula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            Primer Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrimerApellido)
+        </dd>
+        <dt class = "col-sm-2">
+            Segundo Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SegundoApellido)
+        </dd>
+        <dt class = "col-sm-2">
+           Teléfono
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Teléfono)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Edad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Edad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Horario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Horario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.EmpleadoCedula">Modificar</a> |
+    <a asp-action="Index">Volver a la lista</a>
+</div>

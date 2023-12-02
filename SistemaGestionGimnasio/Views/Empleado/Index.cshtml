@@ -1,0 +1,93 @@
+﻿@model IEnumerable<SistemaGestionGimnasio.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+
+<h1>Gestión de empleados</h1>
+
+<p>
+    <a asp-action="Create">Agregar Empleado</a>
+</p>
+@using (Html.BeginForm("Index", "TuControlador", FormMethod.Get))
+{
+    <p>
+        Filtrar por Cédula: <input type="text" name="filtroCedula" />
+        <input type="submit" value="Filtrar" class="btn btn-secondary" />
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Cédula
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrimerApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teléfono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Horario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.EmpleadoCedula)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrimerApellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teléfono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Horario)
+            </td>
+                <td>
+                <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.EmpleadoCedula">Ver</a> |
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.EmpleadoCedula">Modificar</a> |
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#confirmDelete_@item.EmpleadoCedula">
+                    Eliminar
+                </button>
+                <div class="modal fade" id="confirmDelete_@item.EmpleadoCedula" tabindex="-1" aria-labelledby="confirmDeleteLabel_@item.EmpleadoCedula" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="confirmDeleteLabel_@item.EmpleadoCedula">Eliminar cliente</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Desea eliminar el cliente?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.EmpleadoCedula">Eliminar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </td>
+        </tr>
+}
+    </tbody>
+</table>

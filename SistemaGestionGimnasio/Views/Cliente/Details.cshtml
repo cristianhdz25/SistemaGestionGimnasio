@@ -1,0 +1,72 @@
+﻿@model SistemaGestionGimnasio.Models.Cliente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+
+<h1>Detalles del cliente</h1>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Cédula
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClienteCedula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            Primer Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrimerApellido)
+        </dd>
+        <dt class = "col-sm-2">
+            Segundo Apellido
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SegundoApellido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Teléfono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Teléfono)
+        </dd>
+        <dt class = "col-sm-2">
+            Estado
+        </dt>
+        <dd class = "col-sm-10">
+            @if (Model.Activo)
+            {
+                <text>Activo</text>
+            }
+            else
+            {
+                <text>Inactivo</text>
+            }
+        </dd>
+    
+
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.ClienteCedula">Modificar</a> |
+    <a asp-action="Index">Volver a la lista</a>
+</div>

@@ -1,0 +1,102 @@
+﻿@model SistemaGestionGimnasio.Models.Empleado
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+
+<h1>Modificar empleado</h1>
+
+<h4>Empleado</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmpleadoCedula" />
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="EmpleadoCedula" class="control-label">Cédula</label>
+                        <input asp-for="EmpleadoCedula" class="form-control" />
+                        <span asp-validation-for="EmpleadoCedula" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="PrimerApellido" class="control-label">Primer Apellido</label>
+                        <input asp-for="PrimerApellido" class="form-control" />
+                        <span asp-validation-for="PrimerApellido" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Teléfono" class="control-label"></label>
+                        <input asp-for="Teléfono" class="form-control" />
+                        <span asp-validation-for="Teléfono" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="Salario" class="control-label"></label>
+                        <input asp-for="Salario" class="form-control" />
+                        <span asp-validation-for="Salario" class="text-danger"></span>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="SegundoApellido" class="control-label">Segundo Apellido</label>
+                        <input asp-for="SegundoApellido" class="form-control" />
+                        <span asp-validation-for="SegundoApellido" class="text-danger"></span>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label asp-for="Edad" class="control-label"></label>
+                        <input asp-for="Edad" class="form-control" />
+                        <span asp-validation-for="Edad" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Horario" class="control-label"></label>
+                        <select asp-for="Horario" class="form-control">
+                            <option value="Mañana">Mañana</option>
+                            <option value="Tarde">Tarde</option>
+                        </select>
+                        <span asp-validation-for="Horario" class="text-danger"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group my-2">
+                <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volve a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

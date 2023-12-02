@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SistemaGestionGimnasio
+build_property.RootNamespace = SistemaGestionGimnasio
+build_property.ProjectDir = C:\Users\losre\OneDrive\Escritorio\ProyectoAplicada\SistemaGestionGimnasio\SistemaGestionGimnasio\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\losre\OneDrive\Escritorio\ProyectoAplicada\SistemaGestionGimnasio\SistemaGestionGimnasio
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Cliente/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Cliente/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Cliente/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Cliente/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Empleado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Empleado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Empleado/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Empleado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Empleado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Home/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Home/IndexEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleEVtcGxlYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Membresia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYnJlc2lhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Membresia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYnJlc2lhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Membresia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYnJlc2lhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Membresia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYnJlc2lhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Membresia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYnJlc2lhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m0aqvyuas3
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Shared/_LayoutAdministrador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbmlzdHJhZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-hvmme963su
+
+[C:/Users/losre/OneDrive/Escritorio/ProyectoAplicada/SistemaGestionGimnasio/SistemaGestionGimnasio/Views/Shared/_LayoutEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFbXBsZWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5g8gm2onq0

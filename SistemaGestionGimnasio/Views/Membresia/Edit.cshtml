@@ -1,0 +1,60 @@
+﻿@model SistemaGestionGimnasio.Models.Membresium
+
+@{
+    ViewData["Title"] = "Edit";
+}
+@if (ViewBag.Tipo == 1)
+{
+    Layout = "~/Views/Shared/_LayoutAdministrador.cshtml";
+}
+else
+{
+    Layout = "~/Views/Shared/_LayoutEmpleado.cshtml";
+}
+<h1>Modificar membresia</h1>
+
+<h4>Membresia</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="FechaInicio" class="control-label"></label>
+                <input type="date" asp-for="FechaInicio" class="form-control" id="fechaInicio" onchange="calcularFechaVencimiento()" />
+                <span asp-validation-for="FechaInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaVencimiento" class="control-label"></label>
+                <input type="date" asp-for="FechaVencimiento" class="form-control" id="fechaVencimiento" />
+                <span asp-validation-for="FechaVencimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoMembresia" class="control-label">Tipo de Membresia</label>
+                <input asp-for="TipoMembresia" class="form-control" />
+                <span asp-validation-for="TipoMembresia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control" />
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClienteCedula" class="control-label">Cedula del cliente</label>
+                <select asp-for="ClienteCedula" class="form-control" asp-items="ViewBag.ClienteCedula"></select>
+            </div>
+            <div class="form-group my-2">
+                <input type="submit" value="Guardar cambios" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
